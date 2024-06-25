@@ -1,0 +1,89 @@
+# NUMPY:
+-> It stands for Numerical Python and this library is used 	for working wiht Arrays.
+
+@ ARRAYS
+--------
+-> It is structure for storing and retriveing the data.
+-> They are also mutable .
+One Dimensional Arrays is a type of linear arrays .
+Multi Dimensional Arrays are stored in tabular form.
+
+Most  arrays have some restrictions. For instance:
+All elements of the array must be of the same type of data.
+Once created, the total size of the array can’t change.
+
+So Numpy exploits these characteristics and make arrays more faster and memory efficient.
+
+@ ARRAYS ATTRIBUTES
+------------------
+
+# ndim
+-> The number of dimensions of an arrays in contained in ndim attribute
+
+# shape
+-> It specifies the no of element in along wach dimensions (rows,cols)
+
+# size
+-> It tell us the total number of element in an array.
+
+# dtype
+-> Arrays can only contains the element of 1 'data type'. The data type is recorded as dtype.
+
+@ Creating basic arrays
+-----------------------
+
+# 1 np.zeros()
+-> Creates an arrays filled with 0's
+
+# 2 np.ones()
+-> Create an array filled with 1's
+
+# 3 np.empty()
+-> Creates an empty arrays whose initial content is random.
+-> The reason to use zeros over empty is speed.
+
+# 4 np.arange()
+-> Creates an array with the range of elements
+
+# 5.np.linspace()
+-> creates an array with values that are spaced linearly in a specified interval.
+
+In general the default dtype is float but we can change it use dtype keyword.
+
+@ Broadcasting
+--------------
+-> It allows to perfrom operation on array of different sizes.
+-> It multiply with each cells.
+-> Make sure that atleast one of the dimensions is equal otherwise it will give you the value error.
+
+@ Stacking
+----------
+-> It is similar to concatenation but it allows arrays to be joined along the new axis and increased dimensions.
+There are Two types of Stacking:-
+
+* Vertical Stacking
+* Horizontal Stacking
+
+@ Splitting
+-----------
+-> It is the exact reverse of Stacking
+-> It divides the arrays into equal sub array or near equal sub array.
+
+There are two types of Splitting:
+* Vertical Splitting
+* Horizontal Splitting
+
+@ Views
+-------
+-> It is just the view of the original array and it does own the array
+-> It has same memory location has array
+-> when changes are made in view it effects the original array adnd vice versa.
+
+@ Copy
+------
+-> It is completely new array and copy owns the original array
+-> When changs are made it copy it does not effect the original array and vice versa.
+
+NOTE:
+To check if array is copy or view we can use "base" function to verify it.
+It return "NONE" for the copy and original array for the View.

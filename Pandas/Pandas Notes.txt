@@ -1,0 +1,25 @@
+# SERIES
+-> Series is a function in pandas which creates a one dimensional arrays and can hold any type of objects or data types.
+
+# DATAFRAMES
+-> It is a two dimensional data structure which represents the data in a tabular fashion in rows and columns.
+-> It has 3 main principal components ie data , rows , columns
+
+# loc method
+-> We have to pass rows or columns names which we want to select
+-> It can also accept boolean data
+-> It can also retrive the info using indexing and slicing.
+
+# iloc method
+-> here we have to pass the integer index to select to select specific row and column
+-> we can also use slicing.
+-> Here we cannot pass rows or columns names to extract the data.
+
+# HANDLING MISSING DATAFRAMES
+
+@ isnull() and notnull()
+-> isnull method is used to check if our data contains any nan value
+-> It will return us True when nan is present and False when it is not present.
+
+@ dropna()
+-> This method is used to drop rows and columns that contains NaN values.

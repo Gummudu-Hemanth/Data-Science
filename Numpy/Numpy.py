@@ -5,7 +5,11 @@ import numpy as np
 # One Dimensional Arrray
 list = [1,2,3,4,5] # Created a list
 
+<<<<<<< HEAD
 # Creating a numpy array
+=======
+#Creating a numpy array
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 arr = np.array(list)
 
 print("The list in python: " , list) # Output =  [1, 2, 3, 4, 5]
@@ -37,8 +41,13 @@ print(arr) # [ 1  2  3  4  5  6 70  8  9]
 arr = np.array([[1,2,3,4] , 
 				[5,6,7,8] , 
 				[9,10,11,12]]) # created an array
+<<<<<<< HEAD
 # print(arr)
 # print(type(arr))
+=======
+print(arr)
+print(type(arr))
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 
 print(arr[2 , 2]) # 11
 print(arr[1 , 3]) # 8
@@ -79,11 +88,19 @@ print(arr.size) # 15 total number of elements in 2d array.
 arr = np.zeros(4 , dtype=int)
 print(arr)
 
+<<<<<<< HEAD
 # 2. np.ones()
 arr = np.ones(4 , dtype=int)
 print(arr)
 
 # 3. np.arange()
+=======
+#  2. np.ones()
+arr = np.ones(4 , dtype=int)
+print(arr)
+
+#  3. np.arange()
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 arr = np.arange(5)
 print(arr)
 
@@ -102,7 +119,11 @@ arr = np.array([[1,2,3,4,5] , [6,7,8,9,10] , [11,23,44,56,78]])
 print(arr[0][3]) # 4
 print(arr[2]) #  [11,23,44,56,78]
 
+<<<<<<< HEAD
 # Printing all the values of array less than 9.
+=======
+# Printing qall the values of array less than 9.
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 arr = np.array([[1,2,3,4,5] , [6,7,8,9,10] , [11,23,44,56,78]])
 fil = (arr[arr<9]) # [1 2 3 4 5 6 7 8]
 print(fil)
@@ -110,7 +131,11 @@ print(fil)
 print(arr[arr <=5]) # [1 2 3 4 5]
 
 # Non-zero
+<<<<<<< HEAD
 # -> Selects the indices or elements from the array.
+=======
+-> Selects th eindices or elements from the array.
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 arr = np.array([[1,2,3,4,5] , [6,7,8,9,10] , [11,23,44,56,78]])
 b = np.nonzero(arr>5)
 print(b)
@@ -165,7 +190,11 @@ print(arr.mean()) # 3.0
 
 # 5. STd
 arr = np.array([1,2,3,4,5])
+<<<<<<< HEAD
 # print(arr.std()) # 1.4142135623730951
+=======
+print(arr.std()) # 1.4142135623730951
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9
 
 'Transpose and Reshape'
 
@@ -223,4 +252,8 @@ view = arr.view()
 copy = arr.copy()
 
 print(view.base) # It will return the original array
+<<<<<<< HEAD
 print(copy.base) # It will return NONE.
+=======
+print(copy.base) # It will return NONE.
+>>>>>>> d71c1113307f6bf1859a918928545ee534deabd9

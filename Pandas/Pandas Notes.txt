@@ -23,3 +23,66 @@
 
 @ dropna()
 -> This method is used to drop rows and columns that contains NaN values.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+@ DATA MANIPULATION USING pandas
+
+# Shape
+-> It return the total number of rows and columns in the DATAFRAMES.
+
+# Info()
+-> It gives us the information of the dataframe like no of columns , columns labels , dtype , memory usage ,  non-null values.
+
+# describe()
+-> return the description of the data in dataframe like mean , median , std , min , max , count and etc.
+-> It works only for numerical data by default
+-> We can also use it for categorical data by using the parameter "include = 'all'".
+
+@ 'GROUPING AND AGGREGATION'
+
+# AGGREGATION
+-> It is used to give us the summary of the column in the dataframe.
+-> Use agg() method and mention all the parameter that you want to consider in agg.
+
+# GROUP_BY
+-> It is used to group the data based on some certain criteria from our dataset.
+-> To view the formed groups we have to use first() method.
+
+@ 'COMBINING THE DATA USING MERGE JOIN AND CONCAT'
+
+# merge()
+-> It is used to combine the data on common colums or indices
+
+# join()
+-> It is used to combine the data on common key columns or indices.
+* join.outer() -> Return all rows if there is match is left or right dataframe
+* join.inner() -> return the rows with the matching values in both dataframe.
+* right.join() ->  all rows from right dataframe and matched rows from left df.
+* left.join() -> all rows from left df and matched rows from right df.
+* ignore_index() -> ignores the overlapping indexes.
+
+# concat()
+-> It combines the datframe across rows or columns.
+
+@ HANDLING MISSIMG DATA
+In pandas misiing data is represented by two value:
+* NaN ->  special floating point recongnized by all the IEEE systems.
+* None -> Pyhton singleton object that is often used for missing data.
+
+Methods for handling the missing data
+* isnull() -> Checkes whether the value is NaN or not
+* notnull() -> Checkes whether the value is NaN or not	
+* dropna() -> It drops the values contain NaN.
+The above two methods return True if NaN value is present otherwise false.
+
+# Filling the missing values
+
+* fillna()
+It has to methods to fill the missing value
+- pad () -> filling the missing value with the previous one.
+- bfill() -> filling the missing value wiht the next one.
+
+* replace()
+* interpolate() using linear method.
+

@@ -48,7 +48,7 @@ So Numpy exploits these characteristics and make arrays more faster and memory e
 # 5.np.linspace()
 -> creates an array with values that are spaced linearly in a specified interval.
 
-In general the default dtype is float but we can change it use dtype keyword.
+In general the default dtype is float but we can change it using dtype keyword.
 
 @ Broadcasting
 --------------
